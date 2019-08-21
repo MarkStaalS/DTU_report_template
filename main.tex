@@ -1,18 +1,22 @@
+%Credits to Christine Hvidtfeldt for the inspiration and some contents of this template
 \documentclass[bibliography=totocnumbered,twoside,a4paper]{article}
 \input{import.tex}
-\usepackage{longtable}
-
-
 
 \begin{document}
-\prefrontmatter %front page with names (for DTU)
+\prefrontmatter %front page with names (DTU)
+
+\newpage
+\thispagestyle{empty} %removes header/footer
+\tableofcontents
+\thispagestyle{empty} %removes header/footer
+
+\newpage
+\input{introduction.tex}
+
+\input{conclusion.tex}
 
 \newpage
 \section*{References}
 \printbibliography[heading=none]
 
 \end{document}
-
-
-
-
