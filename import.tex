@@ -53,13 +53,13 @@
 \makeatother %sørger for at fodnoter ikke overstiger sidebredden
 
 \usepackage{formatting/front_page} %package with front page
-
+\usepackage{formatting/variables} %package with course names etc.
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 %\fancyhead{} % clear all header fields
-\fancyhead[RO,RE]{\textit{Loop 2 - Innovation Report}} %subsection placed to the right
-\fancyhead[LE,LO]{\textit{62990 Innovation Pilot}} %section placed to the left
+\fancyhead[RO,RE]{\textit{\HeaderText}} %subsection placed to the right
+\fancyhead[LE,LO]{\textit{\CourseNumber \space \CourseName}} %section placed to the left
 %\fancyhead[RO,RE]{\textsl{\rightmark}} %subsection placed to the right
 \fancyfoot{} % clear all footer fields
 \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
