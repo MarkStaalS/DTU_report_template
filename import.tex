@@ -1,0 +1,82 @@
+\usepackage[T1]{fontenc}        % <-- added
+\usepackage[utf8]{inputenc}     % <-- added
+\usepackage[table]{xcolor}      % <-- changed
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}  % <-- added
+\newcommand\mc[1]{\multicolumn{2}{c}{\textbf{#1}}}  % <-- added
+
+\usepackage{float}
+\usepackage[justification=centering]{caption} %sætter alle figurtekster i midten
+\usepackage{watermark} %vandmærke til forsiden
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage[bottom]{footmisc}
+\usepackage{pdfpages} %muliggør at sætte PDF'er ind
+\usepackage{amsmath} % per-section numbering
+\usepackage{wrapfig}
+\usepackage{csquotes}
+\usepackage{mwe}
+\usepackage{lastpage}
+\usepackage{booktabs}
+\raggedbottom %vigtig! undgår uønsket plads mellem f.eks. figurer
+\usepackage{textpos}
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{breaklinks=true} %links i referencer overstiger ikke siden
+\usepackage{graphicx}
+\usepackage{array} %til tabeller
+\usepackage{adjustbox} %til tabeller
+\usepackage{makecell} %til tabeller
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+    
+
+%<Citation, APA>
+% Use '\autocite{}' for citing references
+\usepackage[backend=biber,style=apa,autocite=inline]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{lib.bib} %Import the bibliography file
+%<\Citation, APA>
+
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\linespread{1.4} %linjeafstand
+
+
+\usepackage{url} %sørger for at fodnoter ikke overstiger sidebredden
+\makeatletter %sørger for at fodnoter ikke overstiger sidebredden
+\g@addto@macro{\UrlBreaks}{\UrlOrds} %sørger for at fodnoter ikke overstiger sidebredden
+\makeatother %sørger for at fodnoter ikke overstiger sidebredden
+
+\usepackage{formatting/front_page} %package with front page
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead{} % clear all header fields
+\fancyhead[RO,RE]{\textit{Loop 2 - Innovation Report}} %subsection placed to the right
+\fancyhead[LE,LO]{\textit{62990 Innovation Pilot}} %section placed to the left
+%\fancyhead[RO,RE]{\textsl{\rightmark}} %subsection placed to the right
+\fancyfoot{} % clear all footer fields
+\fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{0.4pt} %tykkelse af stregen i toppen
+\renewcommand{\footrulewidth}{0.4pt} %tykkelse af stregen i bunden
+
+\fancyheadoffset{0 cm} %linjen øverst/nederst er ligeså bred som teksten
+
+\renewcommand\sectionmark[1]{\markboth{#1}{}}
+
+\usepackage{geometry} %definer margen
+ \geometry{
+ a4paper,
+ left=23.5mm,
+ right=23.5mm,
+ top=30mm,
+ bottom=30mm}
+ 
+ \setlength\parindent{0pt} %permanent no indent
+ 

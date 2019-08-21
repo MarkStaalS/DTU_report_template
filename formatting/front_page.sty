@@ -1,0 +1,36 @@
+\newcommand{\prefrontmatter}{
+% Front of front page
+\begin{titlepage}
+    \begin{textblock}{3}(11,-0.7)
+        \includegraphics[scale=1.5]{formatting/DTU-logo.pdf}
+    \end{textblock}
+
+    \vspace{2.5cm}
+    \begin{centering}
+    { \scshape \LARGE Technical University of Denmark \par }
+    { \Large \today \par }
+    \vspace{0.6cm}
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+    \HRule \\[0.25cm]
+    { \huge \bfseries CourseNameAndNumber\\ [0.25cm] }
+    { \LARGE  CourseName\\ [0.25cm] }
+    { \Large  Subtitle \\ [0.25cm] }
+    \HRule \\[1cm]
+    \end{centering}
+
+    {\Large\itshape\centering
+        Student: Mark Staal Steenberg (s160063)  \par
+        \vspace{0.6cm}
+        Teacher: Teacher  \par
+        \vspace{0.6cm}
+        Counselor: Counselor  \par
+        \vspace{0.6cm}
+    }
+
+    % Bottom of the page
+    \begin{centering}
+    \thiswatermark{\centering \put(-180,-720){\includegraphics[scale=0.6]{formatting/DTU-frise-SH-15.pdf}} }
+    \end{centering}
+    
+\end{titlepage}
+}
