@@ -54,6 +54,8 @@
 
 \usepackage{formatting/front_page} %package with front page
 \usepackage{formatting/variables} %package with course names etc.
+
+%<header/fotter formatting>
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -63,11 +65,10 @@
 %\fancyhead[RO,RE]{\textsl{\rightmark}} %subsection placed to the right
 \fancyfoot{} % clear all footer fields
 \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
-
 \renewcommand{\headrulewidth}{0.4pt} %tykkelse af stregen i toppen
 \renewcommand{\footrulewidth}{0.4pt} %tykkelse af stregen i bunden
-
 \fancyheadoffset{0 cm} %linjen øverst/nederst er ligeså bred som teksten
+%<\header/fotter formatting>
 
 \renewcommand\sectionmark[1]{\markboth{#1}{}}
 
